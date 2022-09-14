@@ -5,3 +5,4 @@
 - Start the project with `npm start`
 
 - Follow the steps in `PropDrillingExercise.js` and `ReduxExercise.js`
+# redux-exercise
