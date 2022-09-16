@@ -2,8 +2,29 @@ import {
     createSlice
 } from '@reduxjs/toolkit'
 
+
+//store cartSlice created by function createSlice that take 
+// reducer as parameter 
+// the reducer is an object with 3 value:
+// 1, a string with key is name and "cart" is string value
+//initialaState, an object with an array name product, and a number object called totalprice
+// an object called reducer, contain 2 method: addToCart and removeCart
+//method addTocard receive state and action as parameter 
+//inside function method, create variable newProduct contain extraction data
+//off object payload inside action object 
+// for each object inside products array inside state object, 
+//if the id value inside payload object insde action object 
+// differect than the id of the targeted object inside products array
+//inside initialState object, it quantity will add 1 more.
+//.... same with removieCart method 
+// extract the list of actions from cartSlice store
+// extract the list of reducers from cartSlice store
+// extract addTocard method and removeCart method from object actions extracted from 
+//reducer cartSlice
+
 export const cartSlice = createSlice({
     name: "cart",
+    //state.cart.products
     initialState: {
         products: [
             { id: "p1", title: "Product 1", price: 0, qty: 0 },

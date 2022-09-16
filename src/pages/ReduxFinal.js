@@ -78,7 +78,7 @@ const ProductOne = (props) => {
   // Step 4
   // Replace the line below to get data of the first product from state.product
   // You should see the price is updated
-  const product = useSelector((state) => state.product[0]);
+  const product = useSelector((state) => state.products[0]);
 
 
   // Step 7
@@ -96,6 +96,11 @@ const ProductOne = (props) => {
   const removeProduct = () => {
     dispatch(removeCart(product));
   };
+// this function when trigged by an event will dispatch an 
+//action creator (exported from store) this function take the called value inside 
+//state value as parameter and change only its value.
+
+
 
   // Step 8
   // Create a function to handle click event of the button Remove
@@ -140,7 +145,7 @@ const ProductTwo = (props) => {
   // Step 5
   // Replace the line below to get data of the second product from state.product
   // You should see the price is updated
-  const product = useSelector((state) => state.product[1]);
+  const product = useSelector((state) => state.products[1]);
 
   // Step 9
   // Repeat step 7 and 8 for this component
